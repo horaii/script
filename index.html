@@ -7,23 +7,24 @@
 </head>
 <body>
     <script>
-        // const student1 = {
-        //     name:'David',
-        //     age: 20,
-        //     'is-Female': false
-        // }
-        // console.log(Student1['is-Female'])
+        //비구조 할당, 구조분해 할당 (destructuring)
 
-        // student1.name = 'Andy'
-        // console.log(student1)
-        // student1.name = 'Emily'
-        // console.log(student1)
+        const colors = ['red', 'green', 'blue'];
+        // const color1 = colors[0];
+        // const color2 = colors[1];
+        // const color3 = colors[2];
 
-        let name = 'abc'
-        const obj = {
-            name:'Andy'
+        const [a, b, c] = colors;
+        console.log(a);
+
+        const student1 = {
+            name:'david',
+            age:20,
+            address:'Seoul'
         }
-        console.log(obj.abc)
+        const {name, age: age2, address } = student1;
+
+        console.log(age2)
     </script>
 </body>
 </html>
